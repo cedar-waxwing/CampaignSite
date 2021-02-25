@@ -1,0 +1,49 @@
+/*html, body {
+    height:100vh
+}*/
+
+banner {
+    font-family: "luminari";
+}
+
+format {
+    font-family: "Georgia";
+}
+
+.btn {
+    background-color: darkgoldenrod;
+}
+
+.features {
+    border-radius: 25px;
+}
+
+footer {
+    font-family: "luminari";
+    font-size: 20px;
+}
+
+.background {
+    background-image: url("../img/dreamland.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gradient {
+    background-image: linear-gradient(rgb(250, 69, 69), rgb(253, 242, 82))
+
+}
+
+.ul-navbar{
+    width:100%;
+}
+
+.left-nav-bar{
+    margin-right:auto;
+}
+.right-nav-bar{
+    margin-left:auto;
+}
+.center-nav-bar{
+    margin:auto;
+}
