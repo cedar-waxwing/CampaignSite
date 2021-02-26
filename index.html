@@ -14,10 +14,11 @@
       <title>Campaign Website</title>
     </head>
 
-<body class="gradient">
+<body class="gradient"> <!--this applies color gradient to the entire page, along with the gradient css-->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-           <!--<a class="navbar-brand" href="#">Elect Teabeanie</a>-->
+           <!--<a class="navbar-brand" href="#">Elect Teabeanie</a> I commented this out becasue I didn't want the
+        title pushing over the nav bar drop down menu.-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -25,12 +26,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 ul-navbar">
+                    <!-- d-none prevents nav dropdown from popping back up at the smallest size screen. Otherwise menu disappears
+                    only on medium-small size.-->
                     <li class="nav-item dropdown left-nav-bar d-none d-sm-none d-md-block">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Menu
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <!-- the href here is an anchor tag that allows you to click and be scrolled to a certain place on the page -->
                             <li><a class="dropdown-item" href="#one">Platform</a></li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -42,11 +46,13 @@
                             <li><a class="dropdown-item" href="#three">Social</a></li>
                         </ul>
                     </li>
+                    <!--this makes the "vote" notice on the nav bar disappear when the screen size is small.-->
                     <li class="nav-item center-nav-bar d-none d-sm-none d-md-block">
                         <b><a href="https://www.vote411.org/register?gclid=Cj0KCQiAst2BBhDJARIsAGo2ldWNEmXw2rc3MCRI2_qPFS1dKggPgl2vm5hxLgmlkVvtA_yPNsI3digaApQQEALw_wcB" target="_blank">VOTE NOVEMBER 5TH!</a></b>
                     </li>
                     <li class="nav-item right-nav-bar">
                         <form class="gap-2">
+                            <!-- gap spaces the buttons -->
                             <button class="btn btn-dark">Volunteer</button>
                             <button class="btn btn-dark">Donate</button>
                             <button class="btn btn-dark">Shop</button>
@@ -58,6 +64,7 @@
     </nav>
 
     <div class="container">
+        <!-- here, trying to remove the "container" class causes the page to be slightly too wide.-->
         <div class="row justify-content-center">
             <div class="col-4 text-end mx-auto">
                 <img src="img/Princess_Bean_Picture.png" class="img-fluid">
@@ -71,19 +78,23 @@
             </div>
         </div>
         <!-- two columns -- one however wide want pic, other is other width
-    add a custom class that lets you type beyond the width of the column -- display, css property overflow
+    add a custom class that lets type beyond the width of the column -- display, css property overflow
     look for overflow x. -->
     </div>
 
     <div class="container">
+        <!-- here, trying to remove the "container" class causes the page to be slightly too wide. Causes the cards to be 
+        than the rest of the page.-->
         <div class="row row-cols-1 row-cols-md-3 g-4" id="one">
             <div class="col">
                 <div class="card h-100">
+                    <!--img-fluid helps the pictures re-scale depending on screen size.-->
                     <img src="img/rescue.jpg" class="card-img-top img-fluid " alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Rescue</h5>
                         <p class="card-text">If you need saving, you can count on Princess Teabeanie to be fashionably late.
                         </p>
+                        <!--btn-dark causes the button to go black on mouseover.-->
                         <a href="#" class="btn btn-dark">Learn More</a>
                     </div>
                 </div>
@@ -113,10 +124,12 @@
         </div>
     </div>
     <div>
+        <!-- this enters a space in the html -- here, it's creating a line break on the page.-->
         &nbsp;
     </div>
 
     <div class="container background img-fluid">
+        <!-- background is the css class for the image to be listed behind the table.-->
         <div class="row justify-content-evenly text-center">
             <div class="col" id="two"> <b>Upcoming Events</b>
                 <table class="table">
@@ -131,6 +144,8 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <!-- pe auto shows that the item is clickable. Here, there's no link so it's more of
+                            an excercise in how to use pe-auto.-->
                             <th scope="row">2.31.21</th>
                             <td colspan="2">Fireside Chat</td>
                             <td><a class="pe-auto">Elfwood</a></td>
@@ -165,11 +180,12 @@
         </div>
     </div>
     <div>
+        <!-- this enters a space in the html -- here, it's creating a line break on the page.-->
         &nbsp;
     </div>
     
     <div class="container" id="three">
-        <footer>Visit us on social! &nbsp;
+        <footer>Visit us on social! &nbsp; <!-- here, this creates a space between the in-text bootstrap icons.-->
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram"
          viewBox="0 0 16 16">
                 <path
@@ -190,6 +206,7 @@
         </footer>
     </div>
     <div>
+        <!-- this enters a space in the html -- here, it's creating a line break on the page.-->
         &nbsp;
     </div>
 
